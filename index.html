@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="main.css" />
+    <title>User Random</title>
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">User</a>
+          <ul class="right">
+            <li>
+              <i class="material-icons right icons-dark">brightness_2</i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Parallax -->
+    <div class="parallax-container paral">
+      <img src="./cosmos.jpg" alt="" />
+    </div>
+    <!-- Container -->
+    <div class="container center">
+      <!-- Input -->
+      <div class="row center">
+        <div class="input-field col s6 m7 l8">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate form-input" />
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6 m5 l4">
+          <a class="btn brown btn-refresh"
+            ><i class="material-icons left">refresh</i>Refresh</a
+          >
+          <a class="btn brown btn-clear right"
+            ><i class="material-icons left">clear</i>Clear</a
+          >
+        </div>
+      </div>
+      <!-- Loader -->
+      <div class="preloader-wrapper small">
+        <div class="spinner-layer spinner-green-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Card -->
+      <div class="row center user-card"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="request.js"></script>
+    <script src="user.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
